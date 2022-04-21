@@ -8,6 +8,7 @@ let tx: any;
 let owner: Signer;
 let attacker: Signer;
 
+// Deploying Setup contract
 beforeEach(async () => {
   [owner, attacker] = await ethers.getSigners();
 
@@ -16,6 +17,7 @@ beforeEach(async () => {
   await setup.deployed();
 });
 
+// Calling solve() method of Hello contract
 it("solves the challenge", async function () {
   const helloAddr = await setup.hello();
   const hello = await ethers.getContractAt("Hello", helloAddr, attacker);

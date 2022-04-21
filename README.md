@@ -7,7 +7,16 @@ Cloned from [https://github.com/MrToph/paradigm-ctf](https://github.com/MrToph/p
 Solved Challenges:
 
 - [x] [Hello](./test/hello.ts)
-
+- [ ] [Babyrev]
+- [ ] [Babysandbox]
+- [ ] [Bank]
+- [ ] [Bouncer]
+- [ ] [Broker]
+- [ ] [Farmer]
+- [ ] [Market]
+- [ ] [Secure]
+- [ ] [Swap]
+- [ ] [YieldAggregator]
 
 # Running challenges
 

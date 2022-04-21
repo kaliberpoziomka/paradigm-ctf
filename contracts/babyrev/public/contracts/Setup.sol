@@ -1,6 +1,6 @@
 pragma solidity 0.4.24;
 
-// import "private/Challenge.sol";
+import "private/Challenge.sol";
 
 interface ChallengeInterface {
     function solved() public view returns (bool);
@@ -12,10 +12,10 @@ contract Setup {
     constructor() public payable {
         require(msg.value == 50 ether);
         
-        // challenge = ChallengeInterface(address(new Challenge()));
+        challenge = ChallengeInterface(address(new Challenge()));
     }
     
     function isSolved() public view returns (bool) {
-        // return challenge.solved();
+        return challenge.solved();
     }
 }
